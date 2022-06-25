@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CRYPTO</title>
+    <link rel="stylesheet" href="finvest.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Crete+Round&family=Francois+One&family=Spectral:wght@300&display=swap" rel="stylesheet">
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@200&display=swap" rel="stylesheet">
+</head>
+<style>
+    header {
+        width: 100%;
+        height: 85vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)), url('https://weeknews.co.uk/wp-content/uploads/2018/10/crypto-currency.jpg') no-repeat 50% 50%;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    
+    .page-container {
+        margin: 1% 20%;
+        font-size: 16px;
+    }
+    
+    .switch-container {
+        display: flex;
+        padding-left: 50px;
+        font-family: monospace;
+        justify-content: center;
+    }
+    
+    .switch-container>div {
+        margin: 1% 10% 3% 0;
+    }
+    
+    .input-container {
+        display: flex;
+        font-family: monospace;
+        font-size: large;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: center;
+    }
+    
+    .input-container>div {
+        margin: 1% 5% 0 0;
+    }
+    
+    .result {
+        padding: 10% 0 0 0;
+        font-size: large;
+        font-family: monospace;
+    }
+    
+    .result-container {
+        /* display: flex; */
+        padding-left: 60px;
+        font-family: monospace;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: center;
+    }
+    
+    .btn-calculate {
+        font-family: monospace;
+        text-align: center;
+    }
+    
+    .btn-calculate>button {
+        height: 35px;
+        margin-right: 12%;
+        border-radius: 10px;
+        border: 2px solid #25AA78;
+        background-color: #25AA78;
+        border-color: #25AA78;
+        font-size: 15px;
+        width: 125px;
+        cursor: pointer;
+    }
+    
+    .body-background {
+        background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    }
+    
+    .currency {
+        background: white;
+        border-radius: 10px;
+    }
+    
+    #total {
+        border: 1px solid;
+    }
+    
+    #wealth-gained {
+        border: 1px solid;
+    }
+    
+    #maturity-value {
+        border: 1px solid;
+    }
+    
+    #investment {
+        height: 30px;
+        border-radius: 9px;
+        border-color: #333;
+    }
+    
+    #years {
+        height: 30px;
+        border-radius: 9px;
+        border-color: #333;
+    }
+    
+    #return-rate {
+        height: 30px;
+        border-radius: 9px;
+        border-color: #333;
+    }
+    
+    #ex1 {
+        border: 2px solid black;
+        padding: 25px;
+        background: url(sipcalc.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    
+    .charts {
+        background-color: #4CAF50;
+        /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        -webkit-transition-duration: 0.4s;
+        /* Safari */
+        transition-duration: 0.4s;
+        justify-content: center;
+    }
+    
+    .chart1:hover {
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    }
+</style>
+
+<body bgcolor="#FFEBCD">
+    <header>
+        <nav>
+            <div class="logo" style="font-family: 'Cinzel', serif;">Finvest</div>
+            <div class="menu"></div>
+            <ul>
+                <li><a href="finvesthome.html">Home</a></li>
+                <li><a href="finvesthome.html">Services</a></li>
+                <!-- <li><a href="">Contact Us</a></li> -->
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="login.php">Login</a></li>
+                <li><a href="account.php">Account</a></li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div padding="3%" style="margin: 5px;">
+        <hr>
+        <br>
+        <img src="https://tse2.mm.bing.net/th?id=OIP.FuRPEqzxTco_Ouk0-n7oMAHaEy&pid=Api&P=0&w=236&h=153" alt="img" style="margin: 5px; float: left; height: 250px; width: 300px;">
+        <font face="arial" size="6">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Crypto Currency</b>
+        </font><br>
+        <hr width="50%" style="color:chocolate;"><br>
+        <p>Cryptocurrency is a type of digital currency that generally only exists electronically. There is no physical coin or bill unless you use a service that allows you to cash in cryptocurrency for a physical token. You usually exchange cryptocurrency
+            with someone online, with your phone or computer, without using an intermediary like a bank.</p><br>
+        <p>In crypto, it is an open history database of all the financial transactions in the network. You might be curious how the decentralized digital idea in tandem with the blockchain technology could change the financial market. There was an idea born
+            to create a decentralized currency, accessible all over the world.
+        </p> <br>
+        <br><br><br><br>
+        <hr>
+    </div>
+    <marquee style="background-color: darkkhaki;">
+        <p style="color: rgb(8, 8, 156); font-size: large; font-family: cursive;">Grow your money with Finvest. Finvest provides you the best crypto advice.</p>
+    </marquee>
+    <hr><br>
+
+    <div align="center">
+        <img src="https://cryptobucksapp.com/wp-content/uploads/2020/08/How-does-crypto-processing-work_.png" alt="crypto image">
+    </div>
+
+    <!-- /* <-------------------------- foooter ---------------------------------->
+
+    <div class="fbody">
+        <footer class="footer">
+            <div class="fcontainer">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">our services</a></li>
+                            <li><a href="#">privacy policy</a></li>
+                            <li><a href="#">affiliation program</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="footer-col">
+                        <h4>Team</h4>
+                        <ul>
+                            <li><a href="#">Ritika Sharma CSE 026</a></li>
+                            <li><a href="#">Manisha Koranga CSE 033</a></li>
+                            <li><a href="#">Niraj Matere CSE 138</a></li>
+                            <li><a href="#">Maitreya Zalte CSE 166</a></li>
+                            <li><a href="#">Sourav Khandekar CSE 181</a></li>
+                            <li><a href="#">Hem Mahimkar CSE 174</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="footer-col">
+                        <h4>Our Offerings</h4>
+                        <ul>
+                            <li><a href="stocks.html">Stocks</a></li>
+                            <li><a href="mf.html">Mutual Funds</a></li>
+                            <li><a href="etf.html">ETF</a></li>
+                            <li><a href="crypto.html">Crypto Currency </a></li>
+                            <li><a href="gold.html">Gold investments </a></li>
+                        </ul>
+
+                    </div>
+                    <div class="footer-col">
+                        <h4>Follow us</h4>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/india.finvest/"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/finvest_snu?lang=en"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/finvest_india/?hl=en"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/company/finvestindia?originalSubdomain=in"><i class="fab fa-linkedin-in"></i></a>
+
+
+                        </div>
+                        <div class="footer-col">
+                            <div class="rig">
+                                 &copy;Copyrights.All right are reserved.2021
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ETF</title>
+    <link rel="stylesheet" href="finvest.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+ 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Crete+Round&family=Francois+One&family=Spectral:wght@300&display=swap" rel="stylesheet">
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@200&display=swap" rel="stylesheet">
+</head>
+<style>
+    header {
+        width: 100%;
+        height: 85vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)), url('http://www.livemint.com/rf/Image-621x414/LiveMint/Period2/2018/01/27/Photos/Processed/ETF-kW0G--621x414@LiveMint.jpg') no-repeat 50% 50%;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    
+    .page-container {
+        margin: 1% 20%;
+        font-size: 16px;
+    }
+    
+    .switch-container {
+        display: flex;
+        padding-left: 50px;
+        font-family: monospace;
+        justify-content: center;
+    }
+    
+    .switch-container>div {
+        margin: 1% 10% 3% 0;
+    }
+    
+    .input-container {
+        display: flex;
+        font-family: monospace;
+        font-size: large;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: center;
+    }
+    
+    .input-container>div {
+        margin: 1% 5% 0 0;
+    }
+    
+    .result {
+        padding: 10% 0 0 0;
+        font-size: large;
+        font-family: monospace;
+    }
+    
+    .result-container {
+        /* display: flex; */
+        padding-left: 60px;
+        font-family: monospace;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: center;
+    }
+    
+    .btn-calculate {
+        font-family: monospace;
+        text-align: center;
+    }
+    
+    .btn-calculate>button {
+        height: 35px;
+        margin-right: 12%;
+        border-radius: 10px;
+        border: 2px solid #25AA78;
+        background-color: #25AA78;
+        border-color: #25AA78;
+        font-size: 15px;
+        width: 125px;
+        cursor: pointer;
+    }
+    
+    .body-background {
+        background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    }
+    
+    .currency {
+        background: white;
+        border-radius: 10px;
+    }
+    
+    #total {
+        border: 1px solid;
+    }
+    
+    #wealth-gained {
+        border: 1px solid;
+    }
+    
+    #maturity-value {
+        border: 1px solid;
+    }
+    
+    #investment {
+        height: 30px;
+        border-radius: 9px;
+        border-color: #333;
+    }
+    
+    #years {
+        height: 30px;
+        border-radius: 9px;
+        border-color: #333;
+    }
+    
+    #return-rate {
+        height: 30px;
+        border-radius: 9px;
+        border-color: #333;
+    }
+    
+    #ex1 {
+        border: 2px solid black;
+        padding: 25px;
+        background: url(sipcalc.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    
+    .charts {
+        background-color: #4CAF50;
+        /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        -webkit-transition-duration: 0.4s;
+        /* Safari */
+        transition-duration: 0.4s;
+        justify-content: center;
+    }
+    
+    .chart1:hover {
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    }
+</style>
+
+<body bgcolor="#FFEBCD">
+    <header>
+        <nav>
+            <div class="logo" style="font-family: 'Cinzel', serif;">Finvest</div>
+            <div class="menu"></div>
+            <ul>
+                <li><a href="finvesthome.html">Home</a></li>
+                <li><a href="finvesthome.html">Services</a></li>
+                <!-- <li><a href="">Contact Us</a></li> -->
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="login.php">Login</a></li>
+                    <li><a href="account.php">Account</a></li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div padding="3%" style="margin: 5px;">
+        <hr>
+        <br>
+        <img src="https://www.finvestable.com/wp-content/uploads/2020/11/etf-1-1024x768.jpg" alt="img" style="margin: 5px; float: left; height: 250px; width: 300px;">
+        <font face="arial" size="6">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>ETF - Exchange Traded Funds</b>
+        </font><br>
+        <hr width="50%" style="color:chocolate;"><br>
+        <p>An exchange-traded fund (ETF) is a type of investment fund and exchange-traded product, i.e. they are traded on stock exchanges. ETFs are similar in many ways to mutual funds, except that ETFs are bought and sold throughout the day on stock exchanges
+            while mutual funds are bought and sold based on their price at day's end.</p><br>
+        <p>An ETF holds assets such as stocks, bonds, currencies, and/or commodities such as gold bars, and generally operates with an arbitrage mechanism designed to keep it trading close to its net asset value,although deviations can occasionally occur.
+        </p> <br>
+        <br><br><br><br>
+        <hr>
+    </div>
+    <marquee style="background-color: darkkhaki;">
+        <p style="color: rgb(8, 8, 156); font-size: large; font-family: cursive;">Grow your money with Finvest. Finvest provides you the best ETF options.</p>
+    </marquee>
+    <hr><br>
+
+    <div align="center">
+        <font face="arial" size="6">
+            <b><p  align="center"> ETFs Vs. Open Ended Funds Vs. Close Ended Funds</p>
+                <hr width="60%" color="#A52A2A">
+            </b>
+        </font>
+    </div><br>
+
+    <table border="1" cellpadding="2%" cellspacing="1" width="95%" align="center" style="border-collapse: collapse; border-style: solid;">
+        <tbody align="center">
+            <tr style="background-color: darkgray;">
+                <th width="19%">Parameter</th>
+                <th width="23%">Open Ended Fund</th>
+                <th width="25%">Closed Ended Fund</th>
+                <th width="33%">Exchange Traded Fund</th>
+            </tr>
+            <tr>
+                <b><td>Fund Size</td></b>
+                <td>Flexible</td>
+                <td>Fixed</td>
+                <td>Flexible</td>
+            </tr>
+            <tr>
+                <b><td>NAV</td></b>
+                <td>Daily</td>
+                <td>Daily</td>
+                <td>Real Time</td>
+            </tr>
+            <tr>
+                <b><td>Liquidity Provider</td></b>
+                <td>Fund itself</td>
+                <td>Stock Market</td>
+                <td>Stock Market / Fund itself</td>
+            </tr>
+            <tr>
+                <b><td>Sale Price</td></b>
+                <td>At NAV plus load, if any</td>
+                <td>Significant Premium / Discount to NAV</td>
+                <td>Very close to actual NAV of Scheme</td>
+            </tr>
+            <tr>
+                <b><td>Availability</td></b>
+                <td>Fund itself</td>
+                <td>Through Exchange where listed</td>
+                <td>Through Exchange where listed / Fund itself.</td>
+            </tr>
+            <tr>
+                <b><td>Portfolio Disclosure</td></b>
+                <td>Monthly</td>
+                <td>Monthly</td>
+                <td>Daily/Real-time</td>
+            </tr>
+            <tr>
+                <b><td>Uses</td></b>
+                <td>Equitising cash</td>
+                <td>-</td>
+                <td>Equitising Cash, Hedging, Arbitrage</td>
+            </tr>
+            <tr>
+                <b><td>Intra-Day Trading</td></b>
+                <td>Not possible</td>
+                <td>Expensive</td>
+                <td>Possible at low cost</td>
+            </tr>
+        </tbody>
+    </table><br>
+    <hr>
+    <div align="center">
+        <img src="https://d13d5nnq0e5rkn.cloudfront.net/myetf/files/86/86bb6d32-e849-4d81-ab30-290c9cba122e.gif" alt="etf image">
+    </div>
+    <hr><br>
+
+    <!-- /* <-------------------------- foooter ---------------------------------->
+
+    <div class="fbody">
+        <footer class="footer">
+            <div class="fcontainer">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">our services</a></li>
+                            <li><a href="#">privacy policy</a></li>
+                            <li><a href="#">affiliation program</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="footer-col">
+                        <h4>Team</h4>
+                        <ul>
+                            <li><a href="#">Ritika Sharma CSE 026</a></li>
+                            <li><a href="#">Manisha Koranga CSE 033</a></li>
+                            <li><a href="#">Niraj Matere CSE 138</a></li>
+                            <li><a href="#">Maitreya Zalte CSE 166</a></li>
+                            <li><a href="#">Sourav Khandekar CSE 181</a></li>
+                            <li><a href="#">Hem Mahimkar CSE 174</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="footer-col">
+                        <h4>Our Offerings</h4>
+                        <ul>
+                            <li><a href="stocks.html">Stocks</a></li>
+                            <li><a href="mf.html">Mutual Funds</a></li>
+                            <li><a href="etf.html">ETF</a></li>
+                            <li><a href="crypto.html">Crypto Currency </a></li>
+                            <li><a href="gold.html">Gold investments </a></li>
+                        </ul>
+
+                    </div>
+                    <div class="footer-col">
+                        <h4>Follow us</h4>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/india.finvest/"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/finvest_snu?lang=en"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/finvest_india/?hl=en"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/company/finvestindia?originalSubdomain=in"><i class="fab fa-linkedin-in"></i></a>
+
+
+                        </div>
+                        <div class="footer-col">
+                            <div class="rig">
+                                 &copy;Copyrights.All right are reserved.2021
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </footer>
+    </div>
+</body>
+
+</html>

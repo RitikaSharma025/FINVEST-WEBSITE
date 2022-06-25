@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GOLD</title>
+    <link rel="stylesheet" href="finvest.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Crete+Round&family=Francois+One&family=Spectral:wght@300&display=swap" rel="stylesheet">
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@200&display=swap" rel="stylesheet">
+</head>
+<style>
+    header {
+        width: 100%;
+        height: 85vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)), url('https://www.fujairahgold.com/images/gold-products-banner.jpg') no-repeat 50% 50%;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    
+    .page-container {
+        margin: 1% 20%;
+        font-size: 16px;
+    }
+    
+    .switch-container {
+        display: flex;
+        padding-left: 50px;
+        font-family: monospace;
+        justify-content: center;
+    }
+    
+    .switch-container>div {
+        margin: 1% 10% 3% 0;
+    }
+    
+    .input-container {
+        display: flex;
+        font-family: monospace;
+        font-size: large;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: center;
+    }
+    
+    .input-container>div {
+        margin: 1% 5% 0 0;
+    }
+    
+    .result {
+        padding: 10% 0 0 0;
+        font-size: large;
+        font-family: monospace;
+    }
+    
+    .result-container {
+        /* display: flex; */
+        padding-left: 60px;
+        font-family: monospace;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: center;
+    }
+    
+    .btn-calculate {
+        font-family: monospace;
+        text-align: center;
+    }
+    
+    .btn-calculate>button {
+        height: 35px;
+        margin-right: 12%;
+        border-radius: 10px;
+        border: 2px solid #25AA78;
+        background-color: #25AA78;
+        border-color: #25AA78;
+        font-size: 15px;
+        width: 125px;
+        cursor: pointer;
+    }
+    
+    .body-background {
+        background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    }
+    
+    .currency {
+        background: white;
+        border-radius: 10px;
+    }
+    
+    #total {
+        border: 1px solid;
+    }
+    
+    #wealth-gained {
+        border: 1px solid;
+    }
+    
+    #maturity-value {
+        border: 1px solid;
+    }
+    
+    #investment {
+        height: 30px;
+        border-radius: 9px;
+        border-color: #333;
+    }
+    
+    #years {
+        height: 30px;
+        border-radius: 9px;
+        border-color: #333;
+    }
+    
+    #return-rate {
+        height: 30px;
+        border-radius: 9px;
+        border-color: #333;
+    }
+    
+    #ex1 {
+        border: 2px solid black;
+        padding: 25px;
+        background: url(sipcalc.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    
+    .charts {
+        background-color: #4CAF50;
+        /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        -webkit-transition-duration: 0.4s;
+        /* Safari */
+        transition-duration: 0.4s;
+        justify-content: center;
+    }
+    
+    .chart1:hover {
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    }
+</style>
+
+<body bgcolor="#FFEBCD">
+    <header>
+        <nav>
+            <div class="logo" style="font-family: 'Cinzel', serif;">Finvest</div>
+            <div class="menu"></div>
+            <ul>
+                <li><a href="finvesthome.html">Home</a></li>
+                <li><a href="finvesthome.html">Services</a></li>
+                <!-- <li><a href="">Contact Us</a></li> -->
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="login.php">Login</a></li>
+                <li><a href="account.php">Account</a></li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div padding="3%" style="margin: 5px;">
+        <hr>
+        <br>
+        <img src="https://st3.depositphotos.com/1447454/18757/i/950/depositphotos_187573438-stock-photo-gold-bars-golden-coins.jpg" alt="img" style="margin: 5px; float: left; height: 250px; width: 300px;">
+        <font face="arial" size="6">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Gold Investment</b>
+        </font><br>
+        <hr width="50%" style="color:chocolate;"><br>
+        <p>Well, there are some conventional and modern types of gold investments preferred by people. In conventional forms, it was just buying physical gold in the forms of jewelry, coins, billions, or artifacts. The scenario has changed nowadays and investors
+            have more options to invest such as gold ETF and gold funds</p><br>
+        <p>An increasingly common way of accessing the gold market is Internet Investment Gold (IIG). Internet Investment Gold allows investors to buy physical gold online, have it stored in professional vaults and take possession of it should the need arise.
+        </p> <br>
+        <br><br><br><br>
+        <hr>
+    </div>
+    <marquee style="background-color: darkkhaki;">
+        <p style="color: rgb(8, 8, 156); font-size: large; font-family: cursive;">Grow your money with Finvest. Finvest provides you the best gold investments options.</p>
+    </marquee>
+    <hr><br>
+
+    <div align="center">
+        <img src="http://www.halifaxamerica.com/wp-content/uploads/2019/09/gldinstitution-480x288.png" alt="gold image" width="600px" height="500px">
+        <img src="https://i.pinimg.com/originals/65/29/4f/65294fba129cd086cb3e88ad9799f9d4.jpg" alt="gold image" width="600px" height="500px">
+    </div>
+    <hr><br>
+
+    <!-- /* <-------------------------- foooter ---------------------------------->
+
+    <div class="fbody">
+        <footer class="footer">
+            <div class="fcontainer">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">our services</a></li>
+                            <li><a href="#">privacy policy</a></li>
+                            <li><a href="#">affiliation program</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="footer-col">
+                        <h4>Team</h4>
+                        <ul>
+                            <li><a href="#">Ritika Sharma CSE 026</a></li>
+                            <li><a href="#">Manisha Koranga CSE 033</a></li>
+                            <li><a href="#">Niraj Matere CSE 138</a></li>
+                            <li><a href="#">Maitreya Zalte CSE 166</a></li>
+                            <li><a href="#">Sourav Khandekar CSE 181</a></li>
+                            <li><a href="#">Hem Mahimkar CSE 174</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="footer-col">
+                        <h4>Our Offerings</h4>
+                        <ul>
+                            <li><a href="stocks.html">Stocks</a></li>
+                            <li><a href="mf.html">Mutual Funds</a></li>
+                            <li><a href="etf.html">ETF</a></li>
+                            <li><a href="crypto.html">Crypto Currency </a></li>
+                            <li><a href="gold.html">Gold investments </a></li>
+                        </ul>
+
+                    </div>
+                    <div class="footer-col">
+                        <h4>Follow us</h4>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/india.finvest/"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/finvest_snu?lang=en"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/finvest_india/?hl=en"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/company/finvestindia?originalSubdomain=in"><i class="fab fa-linkedin-in"></i></a>
+
+
+                        </div>
+                        <div class="footer-col">
+                            <div class="rig">
+                                 &copy;Copyrights.All right are reserved.2021
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </footer>
+    </div>
+</body>
+
+</html>

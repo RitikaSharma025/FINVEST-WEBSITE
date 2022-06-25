@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finvest</title>
+
+    <link rel="stylesheet" href="finvest.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Crete+Round&family=Francois+One&family=Spectral:wght@300&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@200&display=swap" rel="stylesheet">
+
+    <style>
+        img:hover {
+            opacity: 0.7;
+        }
+
+        div.background {
+            background: url(dtemp.jpg) repeat;
+            border: 2px solid black;
+        }
+
+        div.transbox {
+            margin: 15px;
+            background-color: #ffffff;
+            border: 1px solid black;
+            opacity: 0.6;
+            padding: -10px;
+        }
+
+        div.transbox p {
+            margin: 5%;
+            font-weight: bold;
+            color: #000000;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Create four equal columns that floats next to each other */
+
+        .column {
+            float: left;
+            width: 22%;
+            padding: 10px;
+            height: 250px;
+            margin: 10px;
+            border-radius: 5px;
+            /* Should be removed. Only for demonstration */
+        }
+
+        /* Clear floats after the columns */
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+
+</head>
+
+<body onload="startTime()" onload="alert(message)">
+    <!-- /* <-------------------------- nav bar ---------------------------------->
+
+    <header>
+        <nav>
+            <div class="logo" style="font-family: 'Cinzel', serif;">Finvest</div>
+            <div class="menu">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="login.php">Login</a></li>
+                    <li><a href="signup.php">Signup</a></li>
+                    <!-- <li><a href="account.php">Account</a></li> -->
+                </ul>
+            </div>
+        </nav>
+
+
+    </header>
+
+    <div class="content">
+        <div class="background">
+            <hr>
+            <div class="transbox">
+                <p style="color: red; font-size: 32px; font-family: 'Francois One', sans-serif; text-align: center;">
+                    <b>India’s Most Trusted Investment Platform!</b> </p>
+                <p style="text-align: center;">21000K Customers | 23 Million Transactions | 8K Cr+ Invested </p>
+            </div>
+            <hr>
+        </div>
+        <hr>
+        <marquee>
+            <p style="color: rgb(8, 8, 156); font-size: large; font-family: cursive;">Investing your money is as
+                important as earning an income!</p>
+        </marquee>
+        <hr>
+        </p> <br>
+        <div style="font-family: 'Spectral', serif;">
+            <img src="invest.jpg" alt="img" style="margin: 5px; float: left; height: 300px; width: 300px;">
+            <p>Investing your money can allow you to grow it. Most investment vehicles, such as stocks, certificates of
+                deposit, or bonds, offer returns on your money over the long term. This return allows your money to
+                build, creating wealth over time.
+            </p> <br>
+            <p>To help you ouy with this, Finvest has a number of 'options' which you can choose to invest your money
+                safely.
+            </p> <br>
+            <p>Investing can help you reach big financial goals. If your money is earning a higher rate of return than a
+                savings account, you will be earning more money both over the long term and within a faster period. This
+                return on your investments can be
+                used toward major financial goals, such as buying a home, buying a car, starting your own business, or
+                putting your children through college.
+            </p> <br><br>
+        </div>
+
+        <div style="background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9)),url(greytemp.jpg);">
+            <center><iframe width="450" height="315" src="https://www.youtube.com/embed/-4uGfEhPUko"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    style="text-align: center;" allowfullscreen></iframe></center>
+        </div>
+        <br>
+        <p style="color: rgb(255, 151, 5); font-size: 28px;" align="center" padding="5%" id="services">
+            <font face="arial" size="6">
+                <b>Investment Options</b>
+            </font>
+            <br><br>
+            <center>
+                <table border="0" align="center" style="background-color:rgb(245, 194, 122);" padding="2%">
+
+                    <tr spacing="22%">
+                        <th width="15%" spacing="22%">
+                            <font face="arial" size="4">
+                                <b>Mutual Funds</b>
+                            </font>
+                        </th>
+                        <th width="15%" spacing="22%">
+                            <font face="arial" size="4">
+                                <b>Stocks</b>
+                            </font>
+                        </th>
+                        <th width="15%" spacing="22%">
+                            <font face="arial" size="4">
+                                <b>ETF</b>
+                            </font>
+                        </th>
+                        <th width="15%" spacing="22%">
+                            <font face="arial" size="4">
+                                <b>Crypto</b>
+                            </font>
+                        </th>
+                        <th width="15%" spacing="22%">
+                            <font face="arial" size="4">
+                                <b>Gold and Digital Gold</b>
+                            </font>
+                        </th>
+                    </tr>
+                    <tr>
+                        &nbsp;&nbsp;&nbsp;
+                        <td width="20%" spacing="22%" cellpadding="pixels" cellspacing="pixels" align="center">
+                            <a href="mf.html">
+                                <img src="http://authorstream.s3.amazonaws.com/content/1727973_634985935845665554.jpg"
+                                    alt="Mutual Funds image" width="250px" height="250px">
+                            </a>
+                        </td>
+                        &nbsp;&nbsp;&nbsp;
+                        <td width="20%" spacing="22%" cellpadding="pixels" cellspacing="pixels" align="center">
+                            <a href="stocks.html">
+                                <img src="http://www.toledoblade.com/image/2017/09/15/Stocks-rise-1.JPG"
+                                    alt="Stock image" width="250px" height="250px">
+                            </a>
+                        </td>
+                        &nbsp;&nbsp;&nbsp;
+                        <td width="20%" spacing="22%" cellpadding="pixels" cellspacing="pixels" align="center">
+                            <a href="etf.html">
+                                <img src="https://sdrjix3pzmib.compat.objectstorage.ap-sydney-1.oraclecloud.com/portaugustaonlinenews-com-au/uploads/2020/09/etf-16.9.jpg"
+                                    alt="ETF image" width="250px" height="250px">
+                            </a>
+                        </td>
+                        &nbsp;&nbsp;&nbsp;
+                        <td width="20%" spacing="22%" cellpadding="pixels" cellspacing="pixels" align="center">
+                            <a href="crypto.html">
+                                <img src="http://www.kahntaxlaw.com/wp-content/uploads/2018/03/business-ea34b00820_1920-1030x1030.jpg"
+                                    alt="crypto image" width="250px" height="250px">
+                            </a>
+                        </td>
+                        &nbsp;&nbsp;&nbsp;
+                        <td width="20%" spacing="22%" cellpadding="pixels" cellspacing="pixels" align="center">
+                            <a href="gold.html">
+                                <img src="https://images.thequint.com/thequint%2F2015-06%2F1fe68d04-efa1-4d3d-a442-903794d05fdb%2Fgold.jpg?rect=0%2C0%2C1920%2C1008&w=1200&auto=format%2Ccompress&ogImage=true"
+                                    alt="gold image" width="250px" height="250px">
+                            </a>
+                        </td>
+                        &nbsp;&nbsp;&nbsp;
+                    </tr>
+
+                </table>
+            </center>
+        </p>
+        <p align="center" padding="5%" style="font-family: 'Spectral', serif;">The basic thinking of every generation is
+            “think about the present and live in the present also includes let the past go and thinking about the future
+            is a waste”. Well it is right to some extent if explained correctly “Think about the present”:
+            means work hard enough in your present as you have only today in hand and you never know what your future is
+            going to be, working today will also improve your future. So, FINVEST!
+        </p>
+
+    </div>
+
+    <!--Clock Script-->
+    <script>
+        function startTime() {
+            const today = new Date();
+            let h = today.getHours();
+            let m = today.getMinutes();
+            let s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+            setTimeout(startTime, 1000);
+        }
+
+        function checkTime(i) {
+            if (i < 10) {
+                i = "0" + i
+            }; // add zero in front of numbers < 10
+            return i;
+        }
+    </script>
+
+    <!-- /* <-------------------------- welcome animation ---------------------------------->
+    <div class="conta">
+        <span class="text1">Welcome to</span><br>
+        <span class="text2" style="font-family: 'Cinzel', serif;">Finvest</span>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <script>
+        $(window).scrolldown(function () {
+            if ($(window).scrollTop()) {
+                $("nav").addClass("black");
+            } else {
+                $("nav").removeClass("black")
+            }
+        })
+    </script>
+    <!-- /* <-------------------------- foooter ---------------------------------->
+
+    <div class="fbody">
+        <footer class="footer">
+            <div class="fcontainer">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">our services</a></li>
+                            <li><a href="#">privacy policy</a></li>
+                            <li><a href="#">affiliation program</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="footer-col">
+                        <h4>Team</h4>
+                        <ul>
+                            <li><a href="#">Ritika Sharma CSE 026</a></li>
+                            <li><a href="#">Manisha Koranga CSE 033</a></li>
+                            <li><a href="#">Niraj Matere CSE 138</a></li>
+                            <li><a href="#">Maitreya Zalte CSE 166</a></li>
+                            <li><a href="#">Sourav Khandekar CSE 181</a></li>
+                            <li><a href="#">Hem Mahimkar CSE 174</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="footer-col">
+                        <h4>Our Offerings</h4>
+                        <ul>
+                            <li><a href="stocks.html">Stocks</a></li>
+                            <li><a href="mf.html">Mutual Funds</a></li>
+                            <li><a href="etf.html">ETF</a></li>
+                            <li><a href="crypto.html">Crypto Currency </a></li>
+                            <li><a href="gold.html">Gold investments </a></li>
+                        </ul>
+
+                    </div>
+                    <div class="footer-col">
+                        <h4>Follow us</h4>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/india.finvest/"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/finvest_snu?lang=en"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/finvest_india/?hl=en"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/company/finvestindia?originalSubdomain=in"><i class="fab fa-linkedin-in"></i></a>
+
+
+                        </div>
+                        <div class="footer-col">
+                            <div id="txt"
+                                style="text-align: center; font-size: 18px; color: #bbbb;margin-top: 10px;margin-left: -14px;">
+                            </div>
+                        </div>
+
+                        <div class="footer-col">
+                            <div class="rig">
+                                &copy;Copyrights.All right are reserved.2021
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </footer>
+    </div>
+</body>
+<script src="finvest.js"></script>
+
+</html>
